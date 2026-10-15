@@ -28,7 +28,7 @@ Restart the game. The example is designed to show a **World Conditions** page an
 
 The current APIs use `OpenACAI.Loader` and `OpenACAI.Sons` namespaces in Loader Core. Legacy `SonsSdk.dll` is packaged by the loader for compatibility with older RedLoader mods; it is not the Modstoke SDK assembly. `WorldConditions.csproj` references only Loader Core. A mod that changes multiplayer or server state must check authority on the host or server; a menu button on a client is not permission.
 
-For the implementation and broader API surface, use the matching [Modstoke Loader repository](https://github.com/desertofunknown/modstoke-loader). The example's manifest and assembly must travel together. Give your own mod a distinct ID, assembly name, entry type, and menu/provider IDs.
+The matching [Modstoke Loader repository](https://github.com/desertofunknown/modstoke-loader) is being prepared for a curated source import. Until that import is complete, use Loader Core from a matching local build or installation; this SDK repository alone cannot build Loader Core. The example's manifest and assembly must travel together. Give your own mod a distinct ID, assembly name, entry type, and menu/provider IDs.
 
 ## License
 
